@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>botones</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+	
+	<div class="container bordered bg-info py-3 px-3">
+		<form>
+			<div class="mb-3 align-items-start bg-primary py-3 px-3">
+			  <label for="exampleInputEmail1" class="form-label">Email address</label>
+			  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+			</div>
+			<div class="mb-3 align-items-start bg-primary py-2 px-3">
+			  <label for="exampleInputPassword1" class="form-label">Password</label>
+			  <input type="password" class="form-control" id="exampleInputPassword1">
+			  <div id="paswordHelp" class="form-text">Your password is private</div>
+			</div>
+			<div class="mb-3 form-check align-items-start bg-primary py-3 px-3">
+			  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+			  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+			</div>
+			<button type="submit" class="btn btn-info">Submit</button>
+		</form>
+	</div>
+
+	<div class="container bordered bg-primary py-3 px-3">
+		<form>
+			<div class="mb-3 align-items-start bg-warning gx-2 py-2 px-2">
+				<label for="formFile" class="form-label">Default file input</label>
+				<input class="form-control" type="file" id="formFile">
+			</div>
+			<div class="mb-3 align-items-start bg-warning py-2 px-2">
+				<label for="formFileMultiple" class="form-label">Multiple files input</label>
+				<input class="form-control" type="file" id="formFileMultiple" multiple>
+			</div>
+			<div class="mb-3 align-items-start bg-warning py-2 px-2">
+				<label for="formFileDisabled" class="form-label">Disabled file input</label>
+				<input class="form-control" type="file" id="formFileDisabled" disabled>
+			</div>
+			<div class="mb-3 align-items-start bg-warning py-2 px-2">
+				<label for="formFileSm" class="form-label">Small file input</label>
+				<input class="form-control form-control-sm" id="formFileSm" type="file">
+			</div>
+			<div class="mb-3 align-items-start bg-warning py-2 px-2">
+				<label for="formFileLg" class="form-label">Large file input</label>
+				<input class="form-control form-control-lg" id="formFileLg" type="file">
+			</div>
+			<div>
+				<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+			</div>
+		</form>
+	</div>	
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

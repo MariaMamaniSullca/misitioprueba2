@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosTema5.css">
+	<script src="js/arrayAlumnos.js"></script>
+	<script src="js/form03funcion.js"></script>
+</head>
+<body>
+	<h1>Aplicación 3 - Ventanas y tablas</h1>
+	<div id="content">
+	<script>
+		var valor = prompt("¿Cuántos estudiantes de ambos TURNOS desea ver?", "1");
+		if(valor > 0 && valor <= alumnos.length)
+		{
+			for (var i = 0; i < valor; i++){	//i =  i + 1
+				num = alumnos[i][0];		//Numero de orden
+				nom = alumnos[i][1];		//Nombres
+				ape = alumnos[i][2];		//Apellidos
+				tur = fnTurno(alumnos[i][3]);	//turno					
+				res = "("+(i+1) + "/" +alumnos.length+")";			//(i+1) == (i++)
+
+				//fnGenerartabla(res,num,nom,ape,tur);
+				//Alt	+	96
+				document.write(`
+
+<table border="1">
+	<tr>
+		<td>Orden</td>
+		<td rowspan="4"><br><img src="img/f${num}.jpg"></td> 
+		<td>${num} de ${alumnos.length}</td>
+	</tr>
+	<tr>
+		<td>Nombres y Apellidos</td>
+</--	<td>F2C2</td>		-->
+		<td>${nom} ${ape}</td>
+	</tr>
+	<tr>
+		<td>F3C1</td>
+</--	<td>F3C2</td>		-->
+		<td>F3C3</td>
+	</tr>
+	<tr>
+		<td>F4C1</td>
+<--		<td>F4C2</td>		-->
+		<td>F4C3</td>
+	</tr>
+	<tr>
+		<td>colspan="3">F5C1</td>
+<--		<td>F5C2</td>		-->
+		<td>F5C3</td>		
+	</tr>
+</table>				
+				`);
+			}
+	   }else{
+		   alert("solo se tiene registrado " +alumnos.length+"alumnos")
+		   document.writeln("<table border='1'>");
+	   }
+   </script>
+   </div>
+				
+
+				
+	</body>
+</html>
